@@ -1,0 +1,1704 @@
+{
+	"info": {
+		"_postman_id": "cbed8b5e-74bd-49a2-8eb7-2ad9e7bc0298",
+		"name": "Bookify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26816074"
+	},
+	"item": [
+		{
+			"name": "Genre",
+			"item": [
+				{
+					"name": "deleteGenre",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVjZTJmOWU5NjI0YmY4MjIxMWZkMWYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAwMjM0Nzl9.9SfwVquYL24QSvqwEoCVLy8iioIx9caxAyXd2rDMgB4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/genre/65ece373e9624bf82211fd29",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genre",
+								"65ece373e9624bf82211fd29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateGenre",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVjZTJmOWU5NjI0YmY4MjIxMWZkMWYiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAwMjM0Nzl9.9SfwVquYL24QSvqwEoCVLy8iioIx9caxAyXd2rDMgB4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "education",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "postman-cloud:///1eebfc14-3e2e-4280-9e59-7f8646cf9aec"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/genre/65ece6a157efd163b4849167",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genre",
+								"65ece6a157efd163b4849167"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleGenre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/genre/65ece373e9624bf82211fd29",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genre",
+								"65ece373e9624bf82211fd29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGenres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/genre",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addGenre",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZGQ0ODQ0MmI5YjAxMWQ1NWI0ZWMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTIxODQ3NjV9.BhAEZSLkP77TOvdc-yoh8BUAFUlMR5NehHGbfVSDofM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "education",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "postman-cloud:///1eebfbf6-c476-40e0-b456-03dc3c693875"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/genre",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchForGenre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/genre?keyword=cooking",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genre"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "cooking"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allBooksForSpecificGenre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/genre/65ece6a157efd163b4849167/book",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"genre",
+								"65ece6a157efd163b4849167",
+								"book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "getAllBooks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book/660dde88442b9b011d55b508",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"660dde88442b9b011d55b508"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBook",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMDVmOWQyNDkzOWEwZThjZGIwNjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAxNjM1NDl9._ZroCUDebmabgHvCeUJa0_DrcKufDYpC4F1Z0A_VnK0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "cook&taste11",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "65ece6a157efd163b4849167",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "65cccd0309a2ed3622052fb9",
+									"type": "text"
+								},
+								{
+									"key": "imgCover",
+									"type": "file",
+									"src": "postman-cloud:///1eebfbc4-5f9a-46d0-9d12-9a454d3d786b"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book/660c6711f11e684562c31d4b",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"660c6711f11e684562c31d4b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBook",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMDVmOWQyNDkzOWEwZThjZGIwNjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAxNjM1NDl9._ZroCUDebmabgHvCeUJa0_DrcKufDYpC4F1Z0A_VnK0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book/65ccce5eb178570676c81139",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"65ccce5eb178570676c81139"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addBook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZGQ0ODQ0MmI5YjAxMWQ1NWI0ZWMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTIxODQ3NjV9.BhAEZSLkP77TOvdc-yoh8BUAFUlMR5NehHGbfVSDofM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "cook&taste11",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "aaaaaayyyyyyyyyyyyy",
+									"type": "text"
+								},
+								{
+									"key": "imgCover",
+									"type": "file",
+									"src": "postman-cloud:///1eebfbf6-c476-40e0-b456-03dc3c693875"
+								},
+								{
+									"key": "bookContent",
+									"value": "https://www.goodreads.com/book/show/5333265-w-c-fields",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "660dde15442b9b011d55b4fd",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "660dddf6442b9b011d55b4f8",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "660dde30442b9b011d55b501",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLoggedInSingleBook",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMGJjNjJmODRlMGJiMjg3NzUzODQiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDE2NDkzNH0.zGewo8_IbYg2awlYSyqgEB4MspUq7iqjB2NR3I3meMM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book/getLoggedInSingleBook/65ccce1cb178570676c81122",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"getLoggedInSingleBook",
+								"65ccce1cb178570676c81122"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchWithBookTitle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book?keyword=cook",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "cook"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allReviewsForSpecificBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book/660dde88442b9b011d55b508/review",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"660dde88442b9b011d55b508",
+								"review"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMDVmOWQyNDkzOWEwZThjZGIwNjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAxNjM1NDl9._ZroCUDebmabgHvCeUJa0_DrcKufDYpC4F1Z0A_VnK0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/user/65ef0eb9a8e331b4e6b6b021",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"65ef0eb9a8e331b4e6b6b021"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMDVmOWQyNDkzOWEwZThjZGIwNjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAxNjM1NDl9._ZroCUDebmabgHvCeUJa0_DrcKufDYpC4F1Z0A_VnK0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"habiba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/user/65ef0eb9a8e331b4e6b6b021",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"65ef0eb9a8e331b4e6b6b021"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMDVmOWQyNDkzOWEwZThjZGIwNjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAxNjM1NDl9._ZroCUDebmabgHvCeUJa0_DrcKufDYpC4F1Z0A_VnK0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/user/65ef0eb9a8e331b4e6b6b021",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"65ef0eb9a8e331b4e6b6b021"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMDVmOWQyNDkzOWEwZThjZGIwNjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAxNjM1NDl9._ZroCUDebmabgHvCeUJa0_DrcKufDYpC4F1Z0A_VnK0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/user?email=habibamsisi",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "habibamsisi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWVmMDVmOWQyNDkzOWEwZThjZGIwNjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTAxNjM1NDl9._ZroCUDebmabgHvCeUJa0_DrcKufDYpC4F1Z0A_VnK0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"hbhbhbb\",\r\n    \"email\":\"c20cc60111@emailaoa11.pro\",\r\n    \"password\":\"Habiba#123\",\r\n    \"repassword\":\"Habiba#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/user",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "deleteReview",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWMwNDdhZmIwZDA0YzdmZTgyNjYzYzciLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDcxNjU0Njh9.cda079XGDojyopbFotQIuwLF7ns2GEtzgT8ZHNYV4UE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/review/65c14b1da40dfe2a9b8e98d1",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"65c14b1da40dfe2a9b8e98d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateReview",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkYzc4OTJjMzliYjM4OTA3Y2Y4YmIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE3OTE4MH0.9q48xEKz_qJHcDQzzH6GGE2knCGyYPF6zIC4YGzAghI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"ayyy commenttttt\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/review/660dc8622c39bb38907cf8c8",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"660dc8622c39bb38907cf8c8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleReview",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/review/65c14b1da40dfe2a9b8e98d1",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review",
+								"65c14b1da40dfe2a9b8e98d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllReviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/review",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addReview",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkYzc4OTJjMzliYjM4OTA3Y2Y4YmIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE3OTE4MH0.9q48xEKz_qJHcDQzzH6GGE2knCGyYPF6zIC4YGzAghI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\":\"ay comment\",\r\n    \"book\":\"65ba9b4238637ba9ce563535\",\r\n    \"rate\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/review",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllReviewsForSpecificBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/book/65ba9b4238637ba9ce563535/review",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"65ba9b4238637ba9ce563535",
+								"review"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wishlist",
+			"item": [
+				{
+					"name": "removeFromWishlist",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkYzc4OTJjMzliYjM4OTA3Y2Y4YmIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE3OTE4MH0.9q48xEKz_qJHcDQzzH6GGE2knCGyYPF6zIC4YGzAghI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/wishlist/65bd8d5aed5b29c9cbc426e6",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"wishlist",
+								"65bd8d5aed5b29c9cbc426e6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addToWishlist",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkYzc4OTJjMzliYjM4OTA3Y2Y4YmIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE3OTE4MH0.9q48xEKz_qJHcDQzzH6GGE2knCGyYPF6zIC4YGzAghI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"book\":\"65bd8d5aed5b29c9cbc426e6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/wishlist",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLoggedUserWishlist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkYzc4OTJjMzliYjM4OTA3Y2Y4YmIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE3OTE4MH0.9q48xEKz_qJHcDQzzH6GGE2knCGyYPF6zIC4YGzAghI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/wishlist",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"wishlist"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "author",
+			"item": [
+				{
+					"name": "addAuthor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZGQ0ODQ0MmI5YjAxMWQ1NWI0ZWMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTIxODQ3NjV9.BhAEZSLkP77TOvdc-yoh8BUAFUlMR5NehHGbfVSDofM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "nagib mahfouzz",
+									"type": "text"
+								},
+								{
+									"key": "brief",
+									"value": "he is egyption ..he is famous",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eebfbf6-c476-40e0-b456-03dc3c693875"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/author",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllAuthors",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/author?page=2",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"author"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAuthor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkY2U5NTI1YzEyNzVjZjBhZTY4NDgiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTIxODA5MzJ9.aefbPU0EPqWc-ihMFyFPtJKYmP2OF3941_35amjRiF8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "nageeeb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/author/65cbe42e5b954335a5647d3f",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"author",
+								"65cbe42e5b954335a5647d3f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAuthor",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWMwNDdhZmIwZDA0YzdmZTgyNjYzYzciLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDc4NjA4Mzd9.KQ9mV6lwL0dZ4QCJVAmcgQFv3cSKChzUDceTFMlpzz0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/author/660dcf0b25c1275cf0ae6856",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"author",
+								"660dcf0b25c1275cf0ae6856"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSingleAuthor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/author/65cccd0f09a2ed3622052fbd",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"author",
+								"65cccd0f09a2ed3622052fbd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "userImage",
+			"item": [
+				{
+					"name": "addImage",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZDQ4Yjk4YzUxMjlmMzcyNDdiZTkiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE4MjQzNn0.YeBlZR9iIBfaPoYRXjryok5HZMQ5UhaMkyfOrDNl_WU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1eebfbf6-c476-40e0-b456-03dc3c693875"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/userImage",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"userImage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteImage",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZDQ4Yjk4YzUxMjlmMzcyNDdiZTkiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE4MjQzNn0.YeBlZR9iIBfaPoYRXjryok5HZMQ5UhaMkyfOrDNl_WU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/userImage/deleteImage",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"userImage",
+								"deleteImage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\":\"96e47fc945@emailabox.pro\",\r\n    \"password\":\"Habiba#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/signIn",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signIn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Habooba moooooooo el\",\r\n    \"email\":\"96e47fc945@emailabox111.pro\",\r\n    \"password\":\"Habiba#123\",\r\n    \"repassword\":\"Habiba#123\",\r\n    \"age\":80\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/signUp",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWViYzU2NGU2NmQyMWNmZjlhNDZjYzMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwOTk1MDMwOX0.Xf_RsSS0nv0iTFkWq_I803wU2R0on17WlucZJxnX4rw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"Habiba#123\",\r\n    \"newPassword\":\"HabibaElsisi#123\",\r\n    \"reNewPassword\":\"HabibaElsisi#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/changePassword",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWViYzU2NGU2NmQyMWNmZjlhNDZjYzMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwOTk1MTEyOX0.m3t_CKhwB0Bc0ljzYdgKtn4RaGsLLva6Bh4E7OeOFhw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/logout",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAccount",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWViYzU2NGU2NmQyMWNmZjlhNDZjYzMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwOTk1MTgwMH0.YEaV4-_a0utVbV2QZSosNu9hSB58-FyUQwF7wMg5EY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/deleteAccount",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"deleteAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgetPassword",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"32079ee358@emailabox.pro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/forgetPassword",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"forgetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"32079ee358@emailabox.pro\",\r\n    \"forgetCode\":\"89317\",\r\n    \"password\":\"Habiba#1234\",\r\n    \"repassword\":\"Habiba#1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/resetPassword",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateInfo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWViYzU2NGU2NmQyMWNmZjlhNDZjYzMiLCJyb2xlIjoidXNlciIsImlhdCI6MTcwOTk1MTEyOX0.m3t_CKhwB0Bc0ljzYdgKtn4RaGsLLva6Bh4E7OeOFhw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"a8f56c3e69@emailabox.pro\",\r\n    \"age\":\"50\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/updateInfo",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"updateInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateStatus",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkYzc4OTJjMzliYjM4OTA3Y2Y4YmIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE3OTE4MH0.9q48xEKz_qJHcDQzzH6GGE2knCGyYPF6zIC4YGzAghI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"read\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/auth/updateStatus",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"updateStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "historyLog",
+			"item": [
+				{
+					"name": "getAllHistory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZDQ4Yjk4YzUxMjlmMzcyNDdiZTkiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE4MjQzNn0.YeBlZR9iIBfaPoYRXjryok5HZMQ5UhaMkyfOrDNl_WU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/history",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBookFromHistory",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZDQ4Yjk4YzUxMjlmMzcyNDdiZTkiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMjE4MjQzNn0.YeBlZR9iIBfaPoYRXjryok5HZMQ5UhaMkyfOrDNl_WU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/history/65ba9b4238637ba9ce563535",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"65ba9b4238637ba9ce563535"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "languages",
+			"item": [
+				{
+					"name": "addLanguage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBkZGQ0ODQ0MmI5YjAxMWQ1NWI0ZWMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTIxODQ3NjV9.BhAEZSLkP77TOvdc-yoh8BUAFUlMR5NehHGbfVSDofM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"language\":\"english\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/language",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"language"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllLanguages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/language",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"language"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLanguage",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjBjNjQxNGQ3YTE4ZDkxYTA0MTY4NTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTIwODgxNTF9.WSyQ_a5aB4wzLnbva97jzh24mSpjA-heOO7zZ21IUz8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/language/660c65e69d017f7c7803af60",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"language",
+								"660c65e69d017f7c7803af60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allBooksForSpecificLanguage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bookify-new.onrender.com/api/v1/language/660c6672f11e684562c31d2b/book",
+							"protocol": "https",
+							"host": [
+								"bookify-new",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"language",
+								"660c6672f11e684562c31d2b",
+								"book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
