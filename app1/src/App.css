@@ -1,0 +1,310 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.slider-slide {
+  position: relative;
+}
+
+.slider-slide img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay .text {
+  color: white;
+}
+
+.overlay .text h2,
+.overlay .text p {
+  margin: 0;
+}
+
+.overlay .text a {
+  color: white;
+}
+.slider-slide {
+  position: relative;
+}
+
+.slider-image-container {
+  position: relative;
+}
+
+.slider-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  pointer-events: none; /* Prevent text from blocking interaction with images */
+}
+
+/* Add spacing between images */
+.field--item {
+  margin-bottom: 20px;
+}
+
+/* Add slight shadow effect to images */
+.img-responsive {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Center text within each image */
+.form-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Text color */
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold; /* Bold font weight */
+}
+/* Add space between images */
+.field--item {
+  margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+/* Center the text vertically above each image */
+.field--item .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center the text horizontally */
+.field--item .field .form-group {
+  text-align: center;
+}
+.label-small {
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+.position-relative {
+  position: relative;
+}
+.photos{
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  height: 100%;
+  display: flex;
+  /* width: 100% ; */
+  align-items: center;
+  transform: translate(-50%, -50%); /* Center the text precisely */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  /* padding: 10px; */
+}
+
+.text-on-image {
+  background-color: gray;
+  width: 100%;
+}
+.btn-custom {
+  background-color: #0094bd;
+}
+
+
+.form-btn{
+  background-color: rgba(9,116,115,1);
+  color: #fff;
+}
+.whiteText {
+  color: white;
+}
+
+
+/* .nav-itam{
+  
+  color: #fff;
+} */
+
+/* .btn-custom{
+
+  background-color: #0094bd;
+} */
+/* 
+.btn{
+  color: #0094bd;
+} */
+
+
+
+/* .slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.category-title {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+  font-size: 24px; /* Adjust as needed */
+}
+
+
+
+/* .slider-container {
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.slider-col {
+  padding: 0 15px;
+
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(-50%, -50%) translateY(-100%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+} */
+
+
+
+/* .container-fluid{
+  margin-left: auto;
+} */
+/* .nav-link.whiteText {
+  margin-left: auto;
+} */
+
+
+element.style {
+  background-image: url(https://manybooks.net/sites/default/files/2018-07/bookdisplaysmall.jpg);
+}
+
+.mn-field-slider .paragraph--type--main-slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.mn-field-slider .paragraph--type--main-slide {
+    padding: 0 15px;
+}
+
+/* CSS */
+
+
+/* #book-search-form {
+  position: relative;
+}
+* { */
+  /* -webkit-box-sizing: border-box; */
+  /* box-sizing: border-box;
+} */
+/* form {
+  display: block;
+  margin-top: 0em;
+}
+#book-search-form .form-item-search {
+  margin-bottom: 0;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+#book-search-form input {
+  max-width: none;
+  width: 100%;
+}
+#book-search-form input {
+  height: 40px;
+  padding-right: 50px;
+  padding-left: 20px;
+  max-width: 320px;
+  border-radius: 4px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+} */
