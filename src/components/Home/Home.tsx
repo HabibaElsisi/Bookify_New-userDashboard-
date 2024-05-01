@@ -1,4 +1,4 @@
-import CaterorySlider from '../../images/CaterorySlider';
+import CaterorySlider from '../../images/CategorySlider';
 import Category from '../../images/Category';
 import FeaturedBooks from '../FeaturedBooks';
 
