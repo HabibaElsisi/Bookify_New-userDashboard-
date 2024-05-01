@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"wallabyjs.console-ninja",
+		"dbaeumer.vscode-eslint",
+		"pkief.material-icon-theme",
+		"mattpocock.ts-error-translator",
+		"codeium.codeium"
+	]
+}
