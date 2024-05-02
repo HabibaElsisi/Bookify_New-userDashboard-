@@ -1,11 +1,20 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import axios from 'axios';
+import { UserTokenContext } from '../../context/UserTokenContext';
+import { TOKEN_KEY } from '../../utils/consts';
 
 export default function Navbar() {
 	const [searchQuery, setSearchQuery] = useState('');
 	const navigate = useNavigate();
+
+	const { isLogin, setLogin } = useContext(UserTokenContext);
+
+	function onLogout() {
+		setLogin(false);
+		localStorage.removeItem(TOKEN_KEY);
+	}
 
 	const handleSearch = async e => {
 		e.preventDefault();
@@ -192,17 +201,29 @@ export default function Navbar() {
 								<i className='fa-brands fa-youtube mx-2'></i>
 							</a>
 						</li>
-						<li className='nav-item'>
-							<Link className='nav-link' to='/Register'>
-								Register
-							</Link>
-						</li>
 
-						<li className='nav-item'>
-							<Link className='nav-link' to='/logIn'>
-								Login
-							</Link>
-						</li>
+						{!isLogin && (
+							<>
+								<li className='nav-item'>
+									<Link className='nav-link' to='/Register'>
+										Register
+									</Link>
+								</li>
+
+								<li className='nav-item'>
+									<Link className='nav-link' to='/logIn'>
+										Login
+									</Link>
+								</li>
+							</>
+						)}
+						{isLogin && (
+							<li className='nav-item'>
+								<Link onClick={onLogout} className='nav-link' to='/login'>
+									Logout
+								</Link>
+							</li>
+						)}
 					</ul>
 				</div>
 			</div>

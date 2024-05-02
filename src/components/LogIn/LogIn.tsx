@@ -1,38 +1,39 @@
 import axios from 'axios';
 import { useFormik } from 'formik';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { RotatingLines } from 'react-loader-spinner';
 import { Link, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
+import { TOKEN_KEY } from '../../utils/consts';
+import { UserTokenContext } from '../../context/UserTokenContext';
 
 export default function LogIn() {
-	const [error, setError] = useState('');
 	const navigate = useNavigate();
+	const { setLogin } = useContext(UserTokenContext);
+
+	const [error, setError] = useState('');
 	const [loading, setLoading] = useState(false);
 
 	async function submitForm(values) {
 		setLoading(true);
 		try {
 			const response = await axios.post(
-				`https://bookify-new.onrender.com/api/v1/auth/signIn`,
+				`${import.meta.env.VITE_API_URL}auth/signIn`,
 				values
 			);
-			if (
-				response.data.message === 'signIp successfully' &&
-				response.data.token
-			) {
-				localStorage.setItem('token', response.data.token);
+			if (response.status === 200 && response.data.token) {
+				localStorage.setItem(TOKEN_KEY, response.data.token);
 				setError('');
-				setLoading(false);
-				navigate('/Home');
+				setLogin(true);
+				navigate('/');
 			} else {
 				setError('Failed to sign ip. Please try again.');
-				setLoading(false);
 			}
 		} catch (error) {
 			setError(
 				error.response?.data?.message || 'Failed to sign ip. Please try again.'
 			);
+		} finally {
 			setLoading(false);
 		}
 	}

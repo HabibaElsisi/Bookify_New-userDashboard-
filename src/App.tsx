@@ -9,17 +9,19 @@ import Register from './components/Register/Register';
 import NotFound from './components/NotFound/NotFound';
 
 import { UserTokenContext } from './context/UserTokenContext';
-// import { ProtectedRoute } from './ProtectedRoute';
+import { ProtectedRoute } from './ProtectedRoute';
 import Layout from './components/Layout';
 import ForgotPassword from './components/ForgotPassword';
 import Books from './components/books';
 import AllGenre from './components/Genre/AllGenre';
+import { TOKEN_KEY } from './utils/consts';
+
 export default function App() {
 	const { setLogin } = useContext(UserTokenContext);
 
 	useEffect(() => {
-		if (localStorage.getItem('userToken'))
-			setLogin(localStorage.getItem('userToken'));
+		if (localStorage.getItem(TOKEN_KEY))
+			setLogin(!!localStorage.getItem(TOKEN_KEY));
 	}, []);
 
 	const routes = createBrowserRouter([
@@ -27,13 +29,33 @@ export default function App() {
 			path: '/',
 			element: <Layout />,
 			children: [
-				{ index: true, element: <Home /> },
-				// { path: 'home', element: <ProtectedRoute><Home/> </ProtectedRoute> },
+				{
+					index: true,
+					element: (
+						<ProtectedRoute>
+							<Home />
+						</ProtectedRoute>
+					),
+				},
 				{ path: 'login', element: <LogIn /> },
 				{ path: 'register', element: <Register /> },
 				{ path: 'ForgotPassword', element: <ForgotPassword /> },
-				{ path: 'books/:id', element: <Books /> },
-				{ path: 'AllGenre', element: <AllGenre /> },
+				{
+					path: 'books/:id',
+					element: (
+						<ProtectedRoute>
+							<Books />
+						</ProtectedRoute>
+					),
+				},
+				{
+					path: 'AllGenre',
+					element: (
+						<ProtectedRoute>
+							<AllGenre />
+						</ProtectedRoute>
+					),
+				},
 
 				{ path: '*', element: <NotFound /> },
 			],

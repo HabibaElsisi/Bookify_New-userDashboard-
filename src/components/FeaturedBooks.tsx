@@ -33,7 +33,7 @@ export default function FeaturedBooks() {
 				{loading ? (
 					<h1 className='text-center my-2'>Loading...</h1>
 				) : (
-					booksArr.map(book => (
+					booksArr?.map(book => (
 						<div className='col-md-2' key={book.id}>
 							<div className='books p-3 cursor-pointer'>
 								<Link to={'/books/' + book.id} className='books'>

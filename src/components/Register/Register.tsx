@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { RotatingLines } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
+import { TOKEN_KEY } from '../../utils/consts';
 
 export default function Register() {
 	const [error, setError] = useState('');
@@ -14,15 +15,12 @@ export default function Register() {
 		setLoading(true);
 		try {
 			const response = await axios.post(
-				`https://bookify-new.onrender.com/api/v1/auth/signUp`,
+				`${import.meta.env.VITE_API_URL}auth/signUp`,
 				values
 			);
-			if (
-				response.data.message === 'signUp successfully' &&
-				response.data.token
-			) {
+			if (response.status === 200 && response.data.token) {
 				// Store token securely (e.g., local storage)
-				localStorage.setItem('token', response.data.token);
+				localStorage.setItem(TOKEN_KEY, response.data.token);
 				setError('');
 				setLoading(false);
 				navigate('/LogIn');
